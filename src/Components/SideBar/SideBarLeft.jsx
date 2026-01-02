@@ -3,7 +3,7 @@ import React from 'react'
 const SideBarLeft = () => {
     return (
         <div className="
-      flex flex-col gap-4 p-5 min-h-screen w-64
+      flex flex-col gap-4 p-5 min-h-screen
       bg-[rgba(255,255,255,0.08)]
       backdrop-blur-xl
       border border-white/20
