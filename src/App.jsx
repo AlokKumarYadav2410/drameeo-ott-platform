@@ -1,6 +1,7 @@
 import React from 'react'
 import SideBarLeft from './Components/SideBar/SideBarLeft'
 import Navbar from './Components/Navbar/Navbar'
+import MainContainer from './Components/MainContainer/MainContainer'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <div className='flex-1 flex flex-col gap-4'>
         {/* Main Content */}
         <Navbar />
+        <MainContainer />
       </div>
     </div>
   )

@@ -2,21 +2,14 @@ import React from 'react'
 
 const SideBarLeft = () => {
     return (
-        <div className="
-      flex flex-col gap-4 p-5 min-h-screen
-      bg-[rgba(255,255,255,0.08)]
-      backdrop-blur-xl
-      border border-white/20
-      rounded-xl
-      shadow-lg shadow-black/20
-    ">
+        <div className="flex flex-col gap-4 p-5 min-h-screen bg-[rgba(255,255,255,0.08)] backdrop-blur-xl border border-white/20 rounded-xl shadow-lg shadow-black/20">
             {/* Header */}
-            <div className="flex justify-between items-center mb-2">
+            <div className="flex justify-between items-center gap-10 mb-2">
                 <div className="flex gap-3 items-center">
-                    <i class="ri-tv-line text-2xl"></i>
+                    <i class="ri-tv-line text-2xl bg-(--secondary-color)/60 text-black px-2 py-1 rounded-md"></i>
                     <h1 className="text-2xl font-bold text-white">Drameeo</h1>
                 </div>
-                <i className="ri-menu-line text-2xl text-white/70 cursor-pointer"></i>
+                <i className="ri-menu-line text-2xl self-end text-white/70 cursor-pointer"></i>
             </div>
 
             {/* Menu Items */}
