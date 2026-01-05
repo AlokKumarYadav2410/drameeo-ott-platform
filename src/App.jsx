@@ -2,11 +2,13 @@ import React from 'react'
 import { useState } from 'react';
 import Sidebar from './components/Sidebar/Sidebar';
 import MobileMenu from './components/MobileMenu';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
 
 const heroData = {
   title: "Dimensional Kids on an Adventure",
   description:
-    "When two curious kids stumble into a hidden portal, they travel across magical dimensions while trying to find their way home...",
+  "When two curious kids stumble into a hidden portal, they travel across magical dimensions while trying to find their way back home...",
   image:
     "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1200&h=600&fit=crop",
   tags: ["Drama", "Fantasy"],
@@ -199,29 +201,42 @@ const App = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSidebarMinimized, setIsSidebarMinimized] = useState(false);
 
-  function handleMobileMenuToggle(){
+  function handleMobileMenuToggle() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   }
 
-  function handleSidebarToggle(){
+  function handleSidebarToggle() {
     setIsSidebarMinimized(!isSidebarMinimized);
   }
 
   return (
     <div className='bg-(--primary-color) min-h-screen'>
       <div className='hidden lg:block'>
-        <Sidebar 
-          isMinimized = {isSidebarMinimized}
-          onToggle = {handleSidebarToggle}
-          isMobile = {false}
+        <Sidebar
+          isMinimized={isSidebarMinimized}
+          onToggle={handleSidebarToggle}
+          isMobile={false}
         />
       </div>
 
       <div className='lg:hidden'>
         <MobileMenu
-          isOpen = {isMobileMenuOpen}
-          onClose = {handleMobileMenuToggle}
+          isOpen={isMobileMenuOpen}
+          onClose={handleMobileMenuToggle}
         />
+      </div>
+
+      <div className={`${isSidebarMinimized ? "lg:ml-20" : "lg:ml-64"
+        } min-h-screen transition-all duration-300`}
+      >
+        <Header
+          onMobileMenuClick={handleMobileMenuToggle}
+          isMinimized={isSidebarMinimized}
+        />
+
+        <main className="pt-20 md:pt-24 px-4 md:px-8 pb-8">
+          <HeroSection heroData={heroData} />
+        </main>
       </div>
 
     </div>
