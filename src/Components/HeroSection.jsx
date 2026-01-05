@@ -16,7 +16,7 @@ const HeroSection = ({ heroData }) => {
             <div className="relative h-full flex flex-col p-4 sm:p-10 gap-4 sm:gap-6 overflow-hidden bg-cover bg-center">
                 <div className="bg-orange-800/20 text-orange-500 flex items-center justify-center gap-2 w-fit px-2.5 py-1 md:px-3 md:py-1.5 mt-20 sm:mt-0 rounded-full text-sm border border-orange-500/50 shadow-lg shadow-black/30">
                     <Flame className="w-3.5 h-3.5 md:w-4 md:h-4" />
-                    <span className='text-xs md:text-sm font-semibold'>{heroData.badge}</span>
+                    <span className='text-xs md:text-sm font-medium'>{heroData.badge}</span>
                 </div>
                 <div className='flex gap-2'>
                     {heroData.tags.map((tag, index) =>
@@ -32,7 +32,7 @@ const HeroSection = ({ heroData }) => {
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-2xl">
                     {heroData.title}
                 </h1>
-                <p className="text-gray-300 text-sm sm:text-base md:text-lg mb-2 max-w-xl leading-relaxed line-clamp-2 sm:line-clamp-3">
+                <p className="text-gray-300 text-sm sm:text-base mb-2 max-w-xl leading-relaxed line-clamp-2 sm:line-clamp-3">
                     {heroData.description}
                 </p>
                 </div>

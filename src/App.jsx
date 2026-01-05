@@ -4,11 +4,12 @@ import Sidebar from './components/Sidebar/Sidebar';
 import MobileMenu from './components/MobileMenu';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
+import SidebarTooltip from './components/Sidebar/SidebarTooltip';
 
 const heroData = {
   title: "Dimensional Kids on an Adventure",
   description:
-  "When two curious kids stumble into a hidden portal, they travel across magical dimensions while trying to find their way back home...",
+    "When two curious kids stumble into a hidden portal, they travel across magical dimensions while trying to find their way back home...",
   image:
     "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1200&h=600&fit=crop",
   tags: ["Drama", "Fantasy"],
@@ -209,6 +210,13 @@ const App = () => {
     setIsSidebarMinimized(!isSidebarMinimized);
   }
 
+  const [tooltip, setTooltip] = useState({
+    visible: false,
+    label: "",
+    top: 0,
+  });
+
+
   return (
     <div className='bg-(--primary-color) min-h-screen'>
       <div className='hidden lg:block'>
@@ -216,7 +224,14 @@ const App = () => {
           isMinimized={isSidebarMinimized}
           onToggle={handleSidebarToggle}
           isMobile={false}
+          setTooltip={setTooltip}
         />
+
+        {tooltip.visible && isSidebarMinimized && !isMobileMenuOpen && (
+          <SidebarTooltip
+            {...tooltip}
+          />
+        )}
       </div>
 
       <div className='lg:hidden'>
