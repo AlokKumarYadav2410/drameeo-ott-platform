@@ -5,3 +5,11 @@
     --secondary-color: #B693EC;
     --tertiary-color: #ECEFF9;
 }
+
+* {
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+      font-family: "Roboto Slab", serif;
+}
