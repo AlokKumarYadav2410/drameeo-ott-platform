@@ -31,15 +31,15 @@ const ContinueWatching = ({ continueWatchingData }) => {
               </div>
 
               <div className='absolute top-0 left-0 px-4 py-2 w-full'>
-                <h3 className="text-white font-semibold text-base mb-2 drop-shadow-lg line-clamp-1">{item.title}</h3>
+                <h3 className="text-white font-semibold text-lg mb-2 drop-shadow-lg line-clamp-1">{item.title}</h3>
               </div>
 
               <div className='absolute bottom-0 left-0 px-4 w-full mb-4'>
                 <div className='flex justify-between items-center text-sm mb-2'>
-                  <span className="bg-(--secondary-color)/30 backdrop-blur-md px-3 py-1 rounded-md text-white font-medium border border-white/10">
+                  <span className="bg-(--secondary-color)/30 backdrop-blur-md px-3 py-1 rounded-md text-white border font-light border-white/10">
                     {item.episode}
                   </span>
-                  <span className="text-white/90 text-md">{item.duration}</span>
+                  <span className="text-white/90 font-light">{item.duration}</span>
                 </div>
                 <div className='w-full h-1 rounded-full bg-white'>
                   <div className={`bg-(--secondary-color) h-full rounded-full transition-all duration-300`} style={{width: `${item.progress}%`}}>
