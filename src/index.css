@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-:root{
-    --primary-color: #151024;
-    --secondary-color: #B693EC;
-    --tertiary-color: #ECEFF9;
+:root {
+  --primary-color: #151024;
+  --secondary-color: #B693EC;
+  --tertiary-color: #ECEFF9;
 }
 
 * {
@@ -11,5 +11,5 @@
 }
 
 body {
-      font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", serif;
 }
