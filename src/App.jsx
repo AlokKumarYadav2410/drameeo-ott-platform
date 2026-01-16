@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
-import Sidebar from './components/Sidebar/Sidebar.jsx';
-import MobileMenu from './components/MobileMenu.jsx';
-import Header from './components/Header.jsx';
-import HeroSection from './components/HeroSection.jsx';
-import SidebarTooltip from './components/Sidebar/SidebarTooltip.jsx';
-import ContinueWatching from './components/ContinueWatching.jsx';
-import YouMightLike from './components/YouMightLike.jsx';
+import MobileMenu from './components/MobileMenu';
+import Sidebar from './components/Sidebar/Sidebar';
+import SidebarTooltip from './components/Sidebar/SidebarTooltip';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import ContinueWatching from './components/ContinueWatching';
+import YouMightLike from './components/YouMightLike';
 import { heroData, continueWatchingData, youMightLikeData } from './data/allData';
 
 const App = () => {
@@ -67,7 +67,6 @@ const App = () => {
           <YouMightLike youMightLikeData={youMightLikeData} />
         </main>
       </div>
-
     </div>
   )
 }
