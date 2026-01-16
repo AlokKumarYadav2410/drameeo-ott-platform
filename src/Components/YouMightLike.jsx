@@ -31,7 +31,7 @@ const YouMightLike = ({ youMightLikeData }) => {
               </div>
 
               <div className='absolute flex justify-between items-center gap-2 bottom-0 left-0 p-4 w-full'>
-                <h3 className="text-white font-semibold text-base mb-2 drop-shadow-lg line-clamp-1">{item.title}</h3>
+                <h3 className="text-white font-semibold text-base drop-shadow-lg line-clamp-1">{item.title}</h3>
                 <div className="bg-(--secondary-color)/30 backdrop-blur-lg px-2 py-1 rounded-sm flex items-center gap-1">
                   <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
                   <span className={"text-white text-xs font-semibold"}>
