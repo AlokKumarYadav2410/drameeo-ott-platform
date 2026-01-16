@@ -11,10 +11,10 @@
 ### 🔗 Quick Navigation
 
 - [✨ Features](#-features)
-- [🛠️ Tech Stack](#-tech-stack)
+- [🛠️ Tech Stack](#%EF%B8%8F-tech-stack)
 - [🚀 Getting Started](#-getting-started)
 - [📁 Project Structure](#-project-structure)
-- [🎞️ Screenshots](#-screenshots)
+- [🎞️ Screenshots](#screenshots)
 - [🤝 Contributing](#-contributing)
 - [📜 License](#-license)
 
@@ -128,8 +128,7 @@ drameeo-ott-platform/
 ## Screenshots
 
 ### Mobile View
-<img src="src/assets/mobile-view.png" alt="mobilePreview" width="49%"/>
-<img src="src/assets/mobile-menu.png" alt="mobileMenuPreview" width="49%"/>
+<img src="src/assets/mobile-view.png" alt="mobilePreview" height="200px"/> <img src="src/assets/mobile-menu.png" alt="mobileMenuPreview" height="200px"/>
 
 ### Desktop View
 ![Desktop View](src/assets/desktop-view.png)
