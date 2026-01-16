@@ -5,6 +5,7 @@ import MobileMenu from './components/MobileMenu';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import SidebarTooltip from './components/Sidebar/SidebarTooltip';
+import ContinueWatching from './components/ContinueWatching';
 
 const heroData = {
   title: "Dimensional Kids on an Adventure",
@@ -19,39 +20,39 @@ const heroData = {
 const continueWatchingData = [
   {
     id: 1,
-    title: "Midnight Mischief Squad",
-    episode: "Ep.3",
-    duration: "30min 55sec",
-    progress: 45,
+    title: "Stranger Things",
+    episode: "S4 Ep.3",
+    duration: "1h 17min",
+    progress: 52,
     image:
-      "https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=400&h=250&fit=crop",
+      "https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
   },
   {
     id: 2,
-    title: "Legends of the Emerald Mist",
-    episode: "S1 Ep.3",
-    duration: "30min 55sec",
-    progress: 60,
+    title: "The Boys",
+    episode: "S3 Ep.5",
+    duration: "59min",
+    progress: 68,
     image:
-      "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&h=250&fit=crop",
+      "https://image.tmdb.org/t/p/w500/stTEycfG9928HYGEISBFaG1ngjM.jpg",
   },
   {
     id: 3,
-    title: "Rise of the Last Guardian",
-    episode: "S1 Ep.3",
-    duration: "30min 55sec",
-    progress: 30,
+    title: "Money Heist",
+    episode: "Part 3 Ep.6",
+    duration: "45min",
+    progress: 34,
     image:
-      "https://m.media-amazon.com/images/S/pv-target-images/778b4cd438166a931c36c0438d6da852059d4c4ae682ae7eba2917cf0d4e9928.jpg",
+      "https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
   },
   {
     id: 4,
-    title: "The Broken Crown",
-    episode: "S1 Ep.5",
-    duration: "30min 55sec",
-    progress: 75,
+    title: "The Mandalorian",
+    episode: "S2 Ep.4",
+    duration: "42min",
+    progress: 81,
     image:
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=250&fit=crop",
+      "https://image.tmdb.org/t/p/w500/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
   },
 ];
 
@@ -249,8 +250,9 @@ const App = () => {
           isMinimized={isSidebarMinimized}
         />
 
-        <main className="pt-20 md:pt-24 px-4 md:px-8 pb-8">
+        <main className="pt-20 md:pt-24 px-4 md:px-8 pb-8 space-y-6 md:space-y-8">
           <HeroSection heroData={heroData} />
+          <ContinueWatching continueWatchingData={continueWatchingData} />
         </main>
       </div>
 
