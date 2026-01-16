@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
-import Sidebar from './components/Sidebar/Sidebar.jsx';
 import SidebarTooltip from './components/Sidebar/SidebarTooltip.jsx';
+import Sidebar from './components/Sidebar/Sidebar.jsx';
 import MobileMenu from './components/MobileMenu.jsx';
 import Header from './components/Header.jsx';
 import HeroSection from './components/HeroSection.jsx';
