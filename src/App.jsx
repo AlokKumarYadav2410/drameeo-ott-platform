@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
-import SidebarTooltip from './components/Sidebar/SidebarTooltip.jsx';
-import Sidebar from './components/Sidebar/Sidebar.jsx';
-import MobileMenu from './components/MobileMenu.jsx';
-import Header from './components/Header.jsx';
-import HeroSection from './components/HeroSection.jsx';
-import ContinueWatching from './components/ContinueWatching.jsx';
-import YouMightLike from './components/YouMightLike.jsx';
+import SidebarTooltip from './Components/Sidebar/SidebarTooltip.jsx';
+import Sidebar from './Components/Sidebar/Sidebar.jsx';
+import MobileMenu from './Components/MobileMenu.jsx';
+import Header from './Components/Header.jsx';
+import HeroSection from './Components/HeroSection.jsx';
+import ContinueWatching from './Components/ContinueWatching.jsx';
+import YouMightLike from './Components/YouMightLike.jsx';
 import { heroData, continueWatchingData, youMightLikeData } from './data/allData';
 
 const App = () => {
