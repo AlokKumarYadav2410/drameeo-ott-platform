@@ -2,8 +2,23 @@
   <h1>🎬 Drameeo - Modern OTT Streaming Platform</h1>
   <p>A sleek and responsive streaming platform UI inspired by Netflix, built with React and Tailwind CSS</p>
   
-  ![Preview](src/assets/preview.png)
+  <!-- <p>
+    <a href="https://drameeo-ott-platform.vercel.app/" target="_blank">
+      <img src="https://img.shields.io/badge/🔗_Live_Demo-Visit_Site-brightgreen?style=for-the-badge" alt="Live Demo">
+    </a>
+    <a href="https://github.com/AlokKumarYadav2410/drameeo-ott-platform" target="_blank">
+      <img src="https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github" alt="GitHub">
+    </a>
+  </p> -->
   
+  <!-- ![Preview](src/assets/preview.png) -->
+
+  <video controls autoplay loop muted>
+    <source src="src/assets/drameeo-preview.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  
+  🔗 **Live Demo**: https://drameeo-ott-platform.vercel.app/
 </div>
 
 ---
@@ -14,9 +29,9 @@
 - [🛠️ Tech Stack](#%EF%B8%8F-tech-stack)
 - [🚀 Getting Started](#-getting-started)
 - [📁 Project Structure](#-project-structure)
-- [🎞️ Screenshots](#screenshots)
 - [🤝 Contributing](#-contributing)
 - [📜 License](#-license)
+<!-- - [🎞️ Screenshots](#screenshots) -->
 
 ---
 
@@ -125,13 +140,13 @@ drameeo-ott-platform/
 └── README.md              # Project documentation
 ```
 
-## Screenshots
+<!-- ## Screenshots -->
 
-### Mobile View
-<img src="src/assets/mobile-view.png" alt="mobilePreview" height="200px"/> <img src="src/assets/mobile-menu.png" alt="mobileMenuPreview" height="200px"/>
+<!-- ### Mobile View
+<img src="src/assets/mobile-view.png" alt="mobilePreview" height="200px"/> <img src="src/assets/mobile-menu.png" alt="mobileMenuPreview" height="200px"/> -->
 
-### Desktop View
-![Desktop View](src/assets/desktop-view.png)
+<!-- ### Desktop View
+![Desktop View](src/assets/desktop-view.png) -->
 
 ## 🎨 Key Components
 
