@@ -13,10 +13,12 @@
   
   <!-- ![Preview](src/assets/preview.png) -->
 
-  <video controls autoplay loop muted>
+  <!-- <video controls autoplay loop muted>
     <source src="src/assets/drameeo-preview.mp4" type="video/mp4" />
     Your browser does not support the video tag.
-  </video>
+  </video> -->
+
+  ![Drameeo-Preview](src/assets/drameeo-preview.gif)
   
   🔗 **Live Demo**: https://drameeo-ott-platform.vercel.app/
 </div>
